@@ -17,9 +17,7 @@ $f3->run();
 
 
 
-$db = new DB\SQL(
-    $f3->get('db_dns'),
-    $f3->get('db_user'),
-    $f3->get('db_password'),
-    array( \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION )
-);
+// $db = new DB\SQL(
+//     $f3->get('users'),
+//     array( \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION )
+// );

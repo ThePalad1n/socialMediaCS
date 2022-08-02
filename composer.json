@@ -2,11 +2,12 @@
     "name": "thepa/social-media-cs",
     "type": "project",
     "require": {
-        "bcosca/fatfree": "^3.8"
+        "bcosca/fatfree": "3.8"
     },
-    "autoload": {
-        "psr-4": {
-            "Thepa\\SocialMediaCs\\": "src/"
+    "authors": [
+        {
+            "name": "ThePalad1n",
+            "email": "evangreen91@gmail.com"
         }
-    }
+    ]
 }
