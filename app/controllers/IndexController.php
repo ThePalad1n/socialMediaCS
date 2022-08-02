@@ -1,5 +1,3 @@
-lines (158 sloc)  5.74 KB
-
 <?php
 
 class IndexController

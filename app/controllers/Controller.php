@@ -1,9 +1,12 @@
 <?php
  
-class Controller {
+ class Controller {
 	protected $f3;
     protected $db;
-
+    
+    function beforeroute() {
+                $this->f3->reroute('/');
+    }
     function __construct(){
         // grab instance of F3
         $f3 = Base::instance();
@@ -21,5 +24,8 @@ class Controller {
         // track sessions
         new \DB\SQL\Session($this->db);
         
+        // set homepath for easy routing
+        $f3->set('homepath', $f3->get('SCHEME') . '://'
+         . $f3->get('HOST') . $f3->get('BASE'));
     }
 }
