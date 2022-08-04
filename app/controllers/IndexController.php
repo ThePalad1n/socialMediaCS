@@ -5,7 +5,6 @@ class IndexController extends Controller
     {
         // primary landing page
         // set variables
-        $this->f3->set('title', "Welcome to Shrine");
         echo \Template::instance()->render('index.htm');
     }
 }

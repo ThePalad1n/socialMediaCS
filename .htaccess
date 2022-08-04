@@ -9,4 +9,4 @@ RewriteRule .* index.php [L,QSA]
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
 
 
-# RewriteRule .* /f3r/index.php [L,QSA]
+# RewriteRule .* /social/socialmediacs/index.php [L,QSA]
