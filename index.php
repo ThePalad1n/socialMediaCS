@@ -17,3 +17,7 @@ $f3->run();
 
 
 
+$db = new DB\SQL(
+    $f3->get('post'),
+    array( \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION )
+);
