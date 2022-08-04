@@ -1,0 +1,431 @@
+    /*=======================General Start================================= */
+
+
+    * {
+        color: var(--sec);
+        background-color: var(--bg);
+        }
+        
+        textarea {
+            background-color: var(--bg);
+        }
+        
+        div {
+            background-color: var(--bg);
+        }
+        
+        h1 {
+            color: var(--sec);
+        }
+        
+        
+        #footer {
+            color: var(--sec);
+        }
+        
+        
+            /*======================General End================================== */
+        
+        
+        
+        
+            /*==========================Live Chat Start============================== */
+        
+        .chatTime {
+            font-size: .6em;
+        }
+        .livebox {
+            min-height:100vh;
+            padding: auto;
+            min-width: 800px;
+            width: 50vw;
+            background-color: var(--nav);
+        }
+        
+        .live-chat-div {
+            border:solid;
+            border-color: var(--sec);
+            background-color: var(--nav);
+        }
+        
+        /* Style container for user messages */
+        .userSection {
+            width: 100%;
+        }
+        
+        /* Seperates user message from bot reply */
+        .seperator {
+            width: 100%;
+            height: 50px;
+        }
+        
+        
+        
+            /*========================Live Chat End================================ */
+        
+        
+        
+        
+            /*====================Nav BAr Start==================================== */
+        
+            a.navbar-brand {
+                color: var(--pfont);
+                background-color: var(--nav);
+                border-color: var(--lborder)
+            }
+        
+            a.nav-link {
+                color: var(--pfont);
+                background-color: var(--nav);
+                border-color: var(--lborder);
+                border: 0px;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size: medium;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        
+        .nav-item {
+            padding-left: 20px;
+            padding-right: 20px;
+            color: var(--pfont);
+            background-color: var(--bg);
+            border-color: var(--lborder)
+        }
+        
+        a.nav-link:hover {
+            padding-left: 20px;
+            padding-right: 20px;
+            color: var(--bg);
+            background-color: var(--lbg);
+            border-color: var(--bg);
+        
+        }
+        
+        .nav-link:active {
+            color: var(--sec)
+        }
+        
+        #navbarNav{
+            background-color:var(--nav);
+        }
+        
+            /*==========================Nav BAr End============================== */
+        
+        
+        
+            /*============  Registration/Login============================================ */
+        
+            .form {
+                align-items: center;
+            }
+            
+        
+            .form-signin {
+                max-width: 330px;
+                padding: 15px;
+                margin: 0 auto;
+            }
+            
+            .form-signin .form-signin-heading,
+            .form-signin .checkbox {
+                margin-bottom: 10px;
+            }
+            
+            .form-signin .checkbox {
+                font-weight: normal;
+            }
+            
+            .form-signin .form-control {
+                position: relative;
+                height: auto;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 10px;
+                font-size: 16px;
+            }
+            
+            .form-signin .form-control:focus {
+                z-index: 2;
+            }
+            /*============== Registration/Login END========================================== */
+        
+        
+        
+        
+        
+            /*==============DM Start========================================== */
+        
+        /* Make container slightly rounded.*/
+        #container {
+            height: 90%;
+            border-radius: 6px;
+            width: 90%;
+            background: var(--dmout);
+        }
+        
+        /* Style header section */
+        #hh {
+            width: 100%;
+        
+            border-radius: 6px;
+            color: var(--sec);
+            text-align: center;
+            font-size: 2rem;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h5 {
+            color: var(--sec);
+        }
+        
+        button h5 {
+            background-color: var(--tet)
+        }
+        /* Style body */
+        #bdy {
+            height: 75%;
+            background-color: var(--sec);
+            overflow-y: auto;
+            /* outline: 1px black solid; */
+        }
+        
+        
+        /* General styling for all messages */
+        .messages {
+            max-width: 60%;
+            margin: 0.5rem;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            border-radius: 7px;
+        }
+        
+        .replySection, .replySection *{
+            background-color: var(--nav);
+        }
+        
+        .dmpad {
+            margin: 20px;
+        }
+        
+            /*===========DM END============================================= */
+        
+        
+        
+        
+            
+            /*=====================Friends Start=================================== */
+        
+        #friend_buttons {
+            color: var(--tet);
+            background-color: var(--lbg);
+        }
+        
+        #message_button {
+            color: var(--lightblue);
+            background-color: var(--bg);
+        }
+        
+        #danger_button {
+            color: var(--tet);
+            background-color: var(--orange);
+        }
+        .senddm{
+            background-color: rgba(0,0,0,0) !important;
+        }
+        
+        .btn-secondary, #liveChatUserMessageSend {
+            text-decoration: var(--tet);
+            color: var(--tet);
+            background-color: var(--lbg);
+            border-color: var(--tet)
+        }
+        
+        
+        .people-nearby .google-maps {
+            background: var(--tet);
+            border-radius: 4px;
+            border: 1px solid var(--tet);
+            padding: 20px;
+            margin-bottom: 20px;
+            outline: var(--darkblue);
+        }
+        
+        .people-nearby .google-maps .map {
+            height: 300px;
+            width: 100%;
+            border: none;
+            outline: var(--darkblue);
+        }
+        
+        .people-nearby .nearby-user {
+            padding: 20px;
+            margin-top: 20px;
+            /* border-top: 1px solid var(--tet); */
+            /* border-bottom: 1px solid var(--tet); */
+            margin-bottom: 20px;
+            outline: var(--darkblue);
+        }
+        
+        img.profile-photo-lg {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border-color: var(--lightblue);
+        }
+        
+        
+        .container {
+            height: 200px;
+            position: relative;
+        }
+        
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+            
+            
+        .btn-primary:not(:disabled):not(.disabled):active,
+        .btn-primary:not(:disabled):not(.disabled).active,
+        .show>.btn-primary.dropdown-toggle {
+            color: var(--tet);
+            background-color: var(--lbg);
+            border-color: var(--tet)
+        }
+        .profile-link {
+            
+            color: var(--pfont);
+            background-color: var(--tet);
+            border-color: var(--lborder)
+        }
+        .text-right {
+            text-align: right;
+        }
+        
+        .whitelines {
+            border-left: 1px solid var(--lborder);
+            border-right: 1px solid var(--lborder);
+            border-top: 1px solid var(--lborder);
+            border-bottom: 1px solid var(--lborder);
+        
+        }
+        .person{
+            background-color:var(--nav);
+        }
+        
+        .wrapper {
+            -webkit-column-width: 150px;
+            column-width: 150px;
+            height: 110%;
+        }
+        
+        .box {
+            margin: 2em;
+            width: 200px;
+            height: 25px;
+            overflow: hidden;
+        }
+        .btn-light:hover{
+            color: var(--btncolor);
+            background-color: var(--nav);
+            border-color: var(--bg);
+        }
+        
+        #ed:hover{
+            color: yellow;
+            background-color: greenyellow;
+            border-color: var(--bg);
+        }
+            /*===================Friends End===================================== */
+        
+        
+        
+        
+        
+            /*==================== Fuzz Search Start==================================== */
+            .profile-link .fuzForm{
+                padding: 10px;
+                width:300px;
+            }
+            #fuzEL{
+                width: 500px;
+            }
+            /*==================== Fuzz Search End==================================== */
+        
+        
+        
+        
+            
+        
+                /*=====================Newsfeed Start=================================== */
+        
+        
+        /*var(--tet) | aliceblue | #E68E36 | #556DC8 | #7998EE */
+        .jumbotron {
+            color: var(--lightblue);
+            padding-left: 10%;
+            padding-right: 10%;
+            /* outline: 1px black solid; */
+        }
+        
+        .post-author {
+            font-size: 1.5em;
+            color: var(--orange);
+            border-color: var(--lborder);
+        }
+        
+        .post-content {
+            font-size: 2em;
+            color: var(--lightblue);
+            border-color: var(--lborder)
+        }
+        
+        .post-created {
+            font-size: 1em;
+            color: var(--pfont);
+            border-color: var(--lborder)
+        }
+        
+        h2 {
+            font-size: 20px;
+            color: var(--pfont);
+            border-color: var(--lborder)
+        }
+        
+        .posting {
+            background-color: var(--tet);
+            color: var(--pfont);
+            font-size: 2em;
+            margin: 20px;
+        }
+        
+            /*News Feed Profile*/
+            .small-post-profile {
+                object-fit:contain;
+            }
+            
+            .post-content {
+                overflow-y: auto;
+            }
+        
+            /*====================News Feed End==================================== */
+        
+        
+        
+        
+            #light-dark-div {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                z-index: 101;
+            }
+            
+            .live-chat-container {
+                max-height: 800px;
+                min-height: 500px;
+                position: relative;
+            }
