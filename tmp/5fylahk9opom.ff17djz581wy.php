@@ -1,4 +1,4 @@
-<repeat group="{{ @result }}" value="{{ @item }}">
+<?php foreach (($result?:[]) as $item): ?>
     <div class="d-flex justify-content-around ">
         <div class="col-md-8 person whitelines">
             <div class='d-flex justify-content-center align-items-center my-5 person'>
@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-</repeat>
+<?php endforeach; ?>
 <script>
     function showTextBox(e) {
         box = e.parentElement.firstElementChild;

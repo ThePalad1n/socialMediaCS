@@ -1,25 +1,32 @@
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Form</title>
-    </head>
-  
-    <body>
-        <form action = "actions.php" method = "post">
-              
-            Author : <input type = "text" name = "author" 
-              placeholder = "Author's Name" />
-                  
-            <br><br>
-              
-            Number of published Article : <input type = "number"
-              name = "num_article" placeholder = "Published Article" />
-                  
-            <br><br>
-              
-            <input type = "submit" name = "submit" value = "Submit">
-        </form>
-        <script src="script/actions.php"></script>
-    </body>
-</html>  
+<?php foreach (($result?:[]) as $item): ?>
+    <div class="d-flex justify-content-around ">
+        <div class="col-md-8 person whitelines">
+            <div class='d-flex justify-content-center align-items-center my-5 person'>
+                <a href=# style="width:200px;" class="p-1">
+                    <img class="post-profile person" src=#>
+                    <span><?= ($item['imageurl']) ?></span>
+                </a>
+                <span><?= ($item['date']) ?></span>
+                <div class="flex-fill person">
+                    <div class="d-flex flex-column container flex-fill person">
+                        <span><?= ($item['title']) ?></span>
+                        <span><?= ($item['content']) ?></span>
+                        <span><?= ($item['author']) ?></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endforeach; ?>
+<script>
+    function showTextBox(e) {
+        box = e.parentElement.firstElementChild;
+        console.log(box)
+        if (box.style.display === "none") {
+            box.style.display = "block";
+        } else {
+            box.style.display = "none";
+        };
+    };
+</script>

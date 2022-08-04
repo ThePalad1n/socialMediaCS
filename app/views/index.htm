@@ -4,13 +4,14 @@
             <div class='d-flex justify-content-center align-items-center my-5 person'>
                 <a href=# style="width:200px;" class="p-1">
                     <img class="post-profile person" src=#>
-                    Image
+                    <span>{{ @item.imageurl}}</span>
                 </a>
+                <span>{{ @item.date}}</span>
                 <div class="flex-fill person">
                     <div class="d-flex flex-column container flex-fill person">
-                        <p class="post-content person">Title</p>
-                        <p class="post-content person">Content</p>
-                        <p class="post-created person">Author and Date
+                        <span>{{ @item.title}}</span>
+                        <span>{{ @item.content}}</span>
+                        <span>{{ @item.author}}</span>
                         </p>
                     </div>
                 </div>
